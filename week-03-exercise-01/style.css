@@ -1,0 +1,29 @@
+* { 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #525032;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 24px 36px;
+    background-color: #311e0f;
+    border: 1px solid;
+}
+
+h1 {
+    color: #f4e4c9;
+    font-size: large;
+    margin: 10px 5px;
+}
+
+p {
+    color: #f4e4c9;
+    margin: 5px;
+}
