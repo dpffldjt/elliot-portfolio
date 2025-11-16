@@ -20,18 +20,6 @@
   --spacing-large: 32px;
 }
 
-.button {
-  background-color: var(--primary-color);
-  color: var(--background-color);
-  font-family: var(--font-main);
-  padding: var(--spacing-medium) var(--spacing-large);
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: var(--primary-hover-color);
-}
-
 * {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -39,34 +27,120 @@
     font-size: var(--font-size-base);
 }
 
+button {
+    padding: var(--spacing-medium) var(--spacing-large);
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 2px 2px var(--card-background-color);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--primary-hover-color);
+}
+
+button a {
+    color: var(--card-background-color);
+}
+
+a {
+    background-color: inherit;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
 h1 {
     font-size: var(--font-size-h1);
+    color: var(--accent-color);
 }
 
 h2 {
     font-size: var(--font-size-h2);
+    text-align: center;
 }
 
 h3 {
     font-size: var(--font-size-h3);
 }
 
+p {
+    background-color: var(--card-background-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: var(--spacing-small) auto;
+    padding: var(--spacing-small) var(--spacing-medium);   
+}
+
 img {
     border-radius: 8px;
     border: 4px solid var(--accent-color);
-    max-width: 250px;
+    width: 250px;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    row-gap: 2em;
 }
 
 .card {
     background-color: var(--card-background-color);
     max-width: 400px;
     text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: var(--spacing-small);
+    border: 2px solid var(--accent-color);
+    border-radius: 16px;
+    transition: translate 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    translate: -16px -16px;
+    box-shadow: 16px 16px var(--card-background-color);
 }
 
 .card h3 {
     background-color: var(--card-background-color);
+    margin: 16px auto;
+    padding: 2px 2px;
 }
 
 .card p {
     background-color: var(--card-background-color);
+    border: 0px;
+}
+
+.card .details {
+    opacity: 60%;
+    margin: 4px auto;
+    padding: 2px 2px;
+}
+
+footer {
+    text-align: right;
+    padding: 24px 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #9a8d65;
+}
+
+.card button {
+    color: var(--card-background-color);
+    margin-top: auto;
+    margin-bottom: 8px;
+    transition: color 0.2s ease;
+}
+
+.card button:hover {
+    color: var(--text-color);
 }
