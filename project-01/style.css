@@ -144,3 +144,19 @@ footer a:hover {
 .card button:hover {
     color: var(--text-color);
 }
+
+@media (width >= 480px) { 
+    .card {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 45%;
+    }
+}
+
+@media (width >= 1024px) {
+    .card {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 35%;
+    }
+}
