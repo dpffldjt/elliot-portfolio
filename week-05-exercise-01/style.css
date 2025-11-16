@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    line-height: 2;
+    background-color: #fafafa;
+    color: #1F2937;
+    padding: 32px 16px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #6B7280;
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.button-section {
+    padding: 32px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.button-section p {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+button {
+    font-family: "Times New Roman", serif;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.button-01 {
+    background-color: #0066CC;
+    color: #ffffff;
+    padding: 16px 32px;
+    border: 2px solid #0066CC;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-01:hover {
+    background-color: #ffffff;
+    color: #0066CC;
+    border-color: #0066CC;
+}
+
+.button-02 {
+    background-color: #0e6027;
+    color: #ffffff;
+    padding: 16px 32px;
+    border: 2px solid #0e6027;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button-02:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.button-03 {
+    background-color: palegreen;
+    color: black;
+    padding: 16px 32px;
+    border: 2px dotted black;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.button-03:hover {
+    background-color: green;
+    border: 2px solid black;
+    color: #ffffff;
+}
+
+.button-04 {
+    background-color: lightpink;
+    padding: 16px 32px;
+    border: 2px solid palevioletred;
+    color: darkgreen;
+    transition: transform 0.3s ease, border 0.1s ease, box-shadow 0.2s ease;
+}
+
+.button-04:hover {
+    transform: translate(150%, 150%);
+    border: 0px;
+    box-shadow: -8px -4px 1em lightpink;
+}
+
+.button-05 {
+    background-color: darkslateblue;
+    color: lightgrey;
+    padding: 16px 32px;
+    border: 1px solid black;
+    transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border 0.5s ease-in-out, transform 2s ease;
+}
+
+.button-05:hover {
+    transform: rotate(10turn);
+    background-color: lightgrey;
+    color: darkslateblue;
+    border: 2px solid black;
+}
+
+.button-06 {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 16px 32px;
+    border: 2px solid #ffffff;
+    transition: transform 1s ease, opacity 0.3s ease 0.5s;
+}
+
+.button-06:hover {
+    transform: scale(.5);
+    opacity: 0;
+}
