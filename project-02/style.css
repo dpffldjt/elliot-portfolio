@@ -111,18 +111,6 @@ p {
     padding: var(--spacing-small) var(--spacing-medium);
 }
 
-.footnote {
-    background-color: transparent;
-    padding: 0;
-    margin: 0;
-    font-size: var(--font-size-xs);
-}
-
-.footnote-section {
-    font-size: var(--font-size-xs);
-    background-color: transparent;
-}
-
 .inline {
     background-color: transparent;
     margin: 0;
@@ -215,6 +203,25 @@ hr {
   border-style: inset;
   border-left-style: none;
   border-width: 1px;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.footnote {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: var(--font-size-xs);
+}
+
+.footnote-section {
+    font-size: var(--font-size-xs);
+    background-color: transparent;
 }
 
 @media (width >=480px) {
